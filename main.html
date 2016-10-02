@@ -22,27 +22,31 @@
                 margin-left:0px;
                 width:100%;
                 height:40px;
-                background:#aaa;
-                border-bottom:1px solid #999;
+                padding:5px;
+                background:#1D547E;
+                border-bottom:1px solid #174364;
                 z-index:999;
             }
             .navbar a{
-                color:#555;
+                color:#eee;
                 text-decoration:none;
-                padding:5px;
+                padding:10px;
                 margin:5px;
                 line-height:40px;
-                border:1px solid #bbb;
-                background:#ddd;
+                background:#4a7697;
+                border-radius:10px;
+                -webkit-transition: all .4s ease;
+                -moz-transition: all .4s ease;
+                -o-transition: all .4s ease;
+                transition: all .4s ease;
             }
             .navbar a:hover{
-                color:#fff;
+                color:#4a7697;
                 text-decoration:none;
-                padding:5px;
+                padding:10px;
                 margin:5px;
                 line-height:40px;
-                border:1px solid #bbb;
-                background:#ddd;
+                background:#eee;
             }
             #introscreen{
                 position:absolute;
@@ -64,8 +68,8 @@
             }
             .sun{
                 position:absolute;
-                right:150px;
-                top:100px;
+                left:1100px;
+                bottom:450px;
                 width:100px;
                 height:100px;
                 background:#ffeb76;
@@ -140,6 +144,123 @@
                 bottom:205px;
                 z-index:99;
             }
+            .tree3{
+                position:absolute;
+                border:40px solid transparent;
+                border-bottom:80px solid #267138;
+                z-index:99;
+                left:800px;
+                bottom:200px;
+            }
+            .tree3:before{
+                content:"";
+               position:absolute;
+                border:30px solid transparent;
+                border-bottom:60px solid #2b7f3f;
+                margin-left:-30px;
+                margin-top:-50px;
+            }
+            .tree3:after{
+                content:"";
+                position:absolute;
+                border:20px solid transparent;
+                border-bottom:40px solid #308e46;
+                margin-left:-20px;
+                margin-top:-55px;
+            }
+            
+            .treestump3{
+                width:20px;
+                height:20px;
+                background:#834c28;
+                position:absolute;
+                left:830px;
+                bottom:180px;
+                z-index:99;
+            }
+            
+            .cloud{
+                position:absolute;
+                width:240px;
+                height:50px;
+                border-radius:100px;
+                background:#eee;
+                left:500px;
+                bottom:450px;
+                z-index:99;
+            }
+            .cloud::before{
+                content:"";
+                position:absolute;
+                width:80px;
+                height:80px;
+                border-radius:100px;
+                background:#eee;
+                margin-left:25px;
+                margin-top:-25px;
+                z-index:99;
+            }
+            .cloud::after{
+                content:"";
+                position:absolute;
+                width:120px;
+                height:120px;
+                border-radius:100px;
+                background:#eee;
+                margin-left:80px;
+                margin-top:-60px;
+                z-index:99;
+            }
+            .cloudextra{
+                position:absolute;
+                width:200px;
+                height:20px;
+                background:#94d2ef;
+                left:540px;
+                bottom:430px;
+                z-index:99;
+            }
+            .cloud2{
+                position:absolute;
+                width:240px;
+                height:50px;
+                border-radius:100px;
+                background:#fff;
+                left:660px;
+                bottom:410px;
+                z-index:99;
+            }
+            .cloud2::before{
+                content:"";
+                position:absolute;
+                width:80px;
+                height:80px;
+                border-radius:100px;
+                background:#fff;
+                margin-left:25px;
+                margin-top:-25px;
+                z-index:99;
+            }
+            .cloud2::after{
+                content:"";
+                position:absolute;
+                width:120px;
+                height:120px;
+                border-radius:100px;
+                background:#fff;
+                margin-left:80px;
+                margin-top:-60px;
+                z-index:99;
+            }
+            .cloudextra2{
+                position:absolute;
+                width:200px;
+                height:20px;
+                background:#94d2ef;
+                left:700px;
+                bottom:390px;
+                z-index:99;
+            }
             .title{
                 position:absolute;                bottom:220px;
                 color:#fff;
@@ -195,24 +316,169 @@
                 font-family:fugaz one;
                 font-weight:400;
                 margin-left:50px;
-                margin-top:50px;
+                margin-top:70px;
                 color:#fff;
             }
             .bodytext{
-                font-size:36px;
-                line-height:42px;
+                font-size:30px;
+                line-height:36px;
                 margin-left:50px;
+                margin-right:50px;
                 font-family:montserrat;
                 font-weight:700;
                 color:#216331;
             }
+            #location{
+                position:absolute;
+                height:100%;
+                width:100%;
+                top:200%;
+                margin-left:0px;
+                background:#308e46;
+                z-index:99;
+                text-align:center;
+                font-family:montserrat;
+                font-weight:700;
+                font-size:50px;
+            }
+            .maptitle{
+                height:25%;
+                position:absolute;
+                color:#fff;
+                top:15%;
+                left:0px;
+                margin-left:50px;
+                margin-right:50px;
+                line-height:60px;
+            }
+            #map{
+                position:absolute;
+                height:60%;
+                width:100%;
+                top:40%;
+                left:0px;
+                background:#a57d63;
+                z-index:99;
+            }
+            #faq{
+                position:absolute;
+                height:200%;
+                width:100%;
+                top:300%;
+                margin-left:0px;
+                background:#a57d63;
+                z-index:99;
+            }
+            .bodytitle2{
+                font-size:100px;
+                line-height:120px;
+                font-family:fugaz one;
+                font-weight:400;
+                margin-left:50px;
+                margin-top:70px;
+                color:#fff;
+            }
+            .bodytext2{
+                font-size:20px;
+                line-height:24px;
+                margin-left:50px;
+                margin-right:50px;
+                font-family:montserrat;
+                font-weight:700;
+                color:#3cb258;
+                margin-top:20px;
+            }
+            .card{
+                position:relative;
+                background:#fff;
+                width:352px;
+                height:200px;
+                padding:15px;
+                margin:15px;
+                margin-bottom:25px;
+                display:inline-table;
+                border-radius:10px;
+                box-shadow:0px 5px 0px #805336;
+            }
+            .cardcontent{
+                position:relative;
+                width:100%;
+                overflow:auto;
+                height:148px;
+                font-size:20px;
+            }
+            .cardtitle{
+                font-weight:700;
+                font-size:26px;
+                line-height:36px;
+                height:36px;
+                overflow:auto;
+                font-family:montserrat;
+                margin-bottom:5px;
+                padding:5px;
+                text-align:center;
+                background:#e6e6e6;
+                border-radius:5px 5px 0px 0px;
+                border-bottom:2px dashed #dadada;
+                color:#308e46;
+            }
+            ::-webkit-scrollbar{
+                width:10px;
+            }
+            ::-webkit-scrollbar-thumb{
+                background-color:#76a8bf;
+                border-left:1px solid #eee;
+                border-right:1px solid #eee;
+                border-radius:5px;
+            }
+            ::-webkit-scrollbar-track{
+                background-color:#fff;
+                border-radius:5px;
+                border:2px solid #eee;
+            }
+            
         </style>
         <title>MontyHacks</title>
     </head>
     <body>
-        <!----<div class="navbar"><a href="#introscreen">montyhacks</a><a href="#about">about</a><a href="#faq">faq</a><a href="#schedule">schedule</a><a href="#sponsors">sponsors</a></div>-->
-        <div id="introscreen"><div class="sky"></div><div class="sun"></div><div class="tree"></div><div class="treestump"></div><div class="tree2"></div><div class="treestump2"></div><div class="title">montyhacks</div><div class="date">april 22nd, 2017</div><div class="hills"></div></div>
-        <div id="about"><div class="bodytitle">about</div><div class="bodytext">Hosted by the MHS Computer Science Club and YECNJ, MontyHacks is the first hackathon at Montgomery High School and in Somerset County. We aim to expose more students to the exciting world of Computer Science.</div></div>
+        <div class="navbar"><a href="#introscreen">montyhacks</a><a href="#about">about</a><a href="#location">location</a><a href="#faq">faq</a><a href="#schedule">schedule</a><a href="#sponsors">sponsors</a></div>
+        <div id="introscreen"><div class="sky"></div><div class="cloud"></div><div class="cloudextra"></div><div class="cloud2"></div><div class="cloudextra2"></div><div class="sun"></div><div class="tree"></div><div class="treestump"></div><div class="tree2"></div><div class="treestump2"></div><div class="tree3"></div><div class="treestump3"></div><div class="title">montyhacks</div><div class="date">april 22nd, 2017</div><div class="hills"></div></div>
+        <div id="location"><div class="maptitle">MontyHacks is located at Montgomery High School in Skillman, NJ.</div><div id="map"></div></div>
+        <div id="about"><div class="bodytitle">about</div><div class="bodytext">Hosted by the MHS Computer Science Club and YECNJ, MontyHacks is the first hackathon at Montgomery High School and in Somerset County. We aim to expose more students to the exciting world of Computer Science.<br><br>This year, our theme is Hacking for Environmental Change. We hope to see some creative hacks regarding sustainability, resource conservation, renewable energy, etc. However, you don't have to make an environmental hack - we'll have other prize categories as well.<br><br>Beginners are welcome: we'll offer plentiful workshops, mentors, and tech resources to help you make the best hacks possible!</div></div>
+        <div id="faq"><div class="bodytitle2">FAQ</div><div class="bodytext2">
+            <div class="card"><div class="cardtitle">What is a hackathon?</div><div class="cardcontent">A hackathon is a coding competition, typically overnight, where students of various backgrounds team up to make innovative products (hacks).</div></div>
+            
+            <div class="card"><div class="cardtitle">Who can attend?</div><div class="cardcontent">Anyone who is currently under 18 years old and/or enrolled in high school or middle school is able to attend.</div></div>
+            
+            <div class="card"><div class="cardtitle">How much does it cost?</div><div class="cardcontent">Admission is free! However, we encourage you to bring a few dollars to donate to a non-profit of your choice such as GirlsWhoCode or the National Wildlife Federation. We'll have donation boxes set up, and you can choose one to donate to.</div></div>
+            
+            <div class="card"><div class="cardtitle">What should I bring?</div><div class="cardcontent">Bring anything you need to make your hack - a laptop, mouse, drawing tablet, charger, etc. Also, bring a sleeping bag and a pillow if you plan on sleeping.</div></div>
+            
+            <div class="card"><div class="cardtitle">Do I need experience?</div><div class="cardcontent">Nope! Beginners are welcome and encouraged to come; we'll have many workshops and mentors who will help you learn to make something great!</div></div>
+            
+            <div class="card"><div class="cardtitle">What's the selection process?</div><div class="cardcontent">Applicants will be selected based upon their expressed interest, experience, etc. from their application. We will try to make sure that everyone who applies is able to go.</div></div>
+        </div></div>
+        
+    <script>
+
+      function initMap() {
+        var uluru = {lat: 40.417459, lng: -74.706438};
+        var map = new
+        google.maps.Map(document.getElementById('map'), {
+          zoom: 15,
+          center: uluru
+        
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+
+    </script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_9aNr3Y5sFQspZlmM9WVcVaQRhovZlro&callback=initMap">
+    </script>
     </body>
     <script type="text/javascript" src="jquery-3.1.0.min.js"></script>
 </html>
